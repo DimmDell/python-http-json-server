@@ -47,6 +47,6 @@ if __name__ == "__main__":
     thread = threading.Thread(target=run)
     # if threading isn't used, then serve_forever() (line 43) will just stop all code run after it
     thread.start()
-    url = f'http://localhost:{PORT}/hello-there'
+    url = f'http://localhost:{PORT}/hello'
     request = requests.get(url)  # example of a client side request for data
     print(request.json())
