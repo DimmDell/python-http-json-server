@@ -7,4 +7,7 @@ This pulled a some inspiration from [Brad Montgomery's server](https://gist.gith
 - creating and running a localhost server (server side)  
 - responding to client's requests to server, then returning appropiate JSON data (server side)
 - sending requests for data to server getting data back (client side)
+
+## update
+Requesting data from a url is one function of REST programming. I also added a solution using Flask, as it is better for taking care of grunt work, such as processing urls.
  
