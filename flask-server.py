@@ -1,5 +1,6 @@
 import flask
 from flask import request, jsonify
+from flask_cors import CORS
 import requests
 # careful not to mix flask's request with requests!
 
@@ -9,6 +10,9 @@ import threading
 PORT = 8000
 
 app = flask.Flask(__name__)
+
+# this allows other locahost ports to access data from this port
+CORS(app)
 
 # there's a _data so the Python compiler won't confuse the function and the variables
 hello_data = {'hello': 'there', 'response': 'ok'}
